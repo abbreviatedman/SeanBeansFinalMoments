@@ -14,7 +14,9 @@ export class SecondScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.instructions}>Second Screen teasy</Text>
+        <Text style={styles.instructions}>
+          Second Screen teasy
+        </Text>
       </View>
     )
   }

@@ -1,12 +1,12 @@
 import {AppRegistry} from 'react-native';
 import {StackNavigator} from 'react-navigation'
 
-import {HomeScreen} from './src/HomeScreen';
-import {SecondScreen} from './src/SecondScreen';
+import {MovieList} from './src/MovieList';
+import {YouTubePlayer} from './src/components/YouTubePlayer';
 
 const SeanBeansFinalMoments = StackNavigator({
-  Home: {screen: HomeScreen},
-  SecondScreen: {screen: SecondScreen}
+  Home: {screen: MovieList},
+  YouTubePlayer: {screen: YouTubePlayer}
 });
 
 AppRegistry.registerComponent('SeanBeansFinalMoments', () => SeanBeansFinalMoments);
