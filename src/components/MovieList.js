@@ -8,15 +8,15 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-import {styles} from './styles/styles';
-import {YouTubePlayer} from './components/YouTubePlayer';
+import {styles} from '../styles/styles';
+import {YouTubePlayer} from './YouTubePlayer';
 import {navigation} from 'react-navigation';
 
-import {youTubeData} from './movieData/youtube';
+import {youTubeData} from '../movieData/youtube';
 
 export class MovieList extends Component {
    static navigationOptions = {
-      title: "Welcome to SBFM!"
+      title: "Clip Librar"
     };
    state = {
       gitHubUrl: 'http://www.github.com/abbreviatedman/SeanBeansFinalMoments'
@@ -40,7 +40,7 @@ export class MovieList extends Component {
           {`Welcome to Sean Bean's Final Moments!`}
         </Text>
         <Text style={styles.instructions}>
-          {`Here are the final scenes we have in the library so far. (More to come!)`}
+          {`Here are the final scenes we have in the library so far.\n(More to come!)`}
         </Text>
         {youTubeData.map(movie => {
           return (
@@ -55,7 +55,6 @@ export class MovieList extends Component {
             </TouchableOpacity>
           )
         })}
-
         <View style={styles.button}>
           <Button
             onPress={() => gitHub()}

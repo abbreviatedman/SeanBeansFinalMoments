@@ -7,7 +7,19 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
+  splashContainer: {
+    flex: 1,
+    backgroundColor: '#A5114D',
+    justifyContent: 'space-around'
+  },
+  splashHeading: {
+    color: 'white',
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 30
+  },
   welcome: {
+    fontFamily: 'Roboto',
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
